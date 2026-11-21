@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Clip — Short-form video studio for Windows</title>
+<meta name="description" content="AI Clip is a Windows desktop app to create short vertical videos, publish them to YouTube and TikTok, and track their performance.">
+<link rel="icon" href="app-icon.png">
+<style>
+  :root { color-scheme: dark; --bg:#1c1c1e; --card:rgba(255,255,255,.07); --text:#f5f5f7; --muted:#a1a1a6; --accent:#0a84ff; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 -apple-system,"Segoe UI",Inter,sans-serif; }
+  header, main, footer { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+  header { display:flex; align-items:center; justify-content:space-between; padding-top:24px; }
+  .brand { display:flex; align-items:center; gap:10px; font-weight:700; font-size:18px; }
+  .brand img { width:32px; height:32px; }
+  nav a, footer a { color:var(--muted); text-decoration:none; margin-left:18px; }
+  nav a:hover, footer a:hover { color:var(--text); }
+  .hero { padding:72px 0 40px; }
+  h1 { font-size:44px; line-height:1.1; letter-spacing:-.02em; margin:0 0 16px; }
+  .lead { color:var(--muted); font-size:19px; max-width:640px; margin:0 0 28px; }
+  .btn { display:inline-block; background:var(--accent); color:#fff; padding:11px 22px; border-radius:999px; text-decoration:none; font-weight:600; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; padding:24px 0 56px; }
+  .card { background:var(--card); border-radius:16px; padding:20px; }
+  .card h3 { margin:0 0 6px; font-size:17px; }
+  .card p { margin:0; color:var(--muted); font-size:15px; }
+  h2 { font-size:26px; margin:0 0 12px; }
+  ol { color:var(--muted); padding-left:20px; }
+  footer { border-top:1px solid rgba(255,255,255,.08); padding-top:20px; padding-bottom:40px; margin-top:24px; color:var(--muted); font-size:14px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+  footer a { margin:0 18px 0 0; }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand"><img src="app-icon.png" alt="">AI Clip</div>
+  <nav><a href="#features">Features</a><a href="#tiktok">TikTok</a><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></nav>
+</header>
+<main>
+  <section class="hero">
+    <h1>Create, publish and track your short videos.</h1>
+    <p class="lead">AI Clip is a Windows desktop studio for creators. Turn a long video into vertical Shorts with voice-over and subtitles, publish them to YouTube and TikTok, and see what performs best — all from your own computer.</p>
+    <a class="btn" href="#features">See what it does</a>
+  </section>
+
+  <section id="features" class="grid">
+    <div class="card"><h3>Create</h3><p>Cut a passage, reframe it to 9:16, add an AI voice-over or automatic subtitles in several languages.</p></div>
+    <div class="card"><h3>Series</h3><p>Split a long video into numbered episodes and parts, ready to publish as a series.</p></div>
+    <div class="card"><h3>Publish</h3><p>Connect your own YouTube and TikTok accounts and publish or schedule your videos with titles, descriptions and privacy you choose.</p></div>
+    <div class="card"><h3>Track</h3><p>Follow views, likes and comments, and get recommendations on what to create next and when to post.</p></div>
+  </section>
+
+  <section id="tiktok" style="padding-bottom:40px">
+    <h2>How AI Clip uses TikTok</h2>
+    <ol>
+      <li>You click “Connect TikTok” in the app and sign in on TikTok’s own page (Login Kit). AI Clip never sees your password.</li>
+      <li>AI Clip reads your basic profile (display name and avatar) to show which account is connected.</li>
+      <li>When you choose to publish, AI Clip shows a preview, your TikTok nickname, and lets you pick the privacy level and interaction settings before sending the video with the Content Posting API.</li>
+      <li>Access tokens are stored only on your computer. You can disconnect at any time from the app or from your TikTok settings.</li>
+    </ol>
+  </section>
+</main>
+<footer>
+  <span>© 2026 AI Clip</span>
+  <span><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></span>
+</footer>
+</body>
+</html>
