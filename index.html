@@ -11,7 +11,8 @@
   * { box-sizing: border-box; }
   body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 -apple-system,"Segoe UI",Inter,sans-serif; }
   header, main, footer { max-width: 960px; margin: 0 auto; padding: 0 24px; }
-  header { display:flex; align-items:center; justify-content:space-between; padding-top:24px; }
+  header { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; padding-top:24px; }
+  nav { display:flex; flex-wrap:wrap; }
   .brand { display:flex; align-items:center; gap:10px; font-weight:700; font-size:18px; }
   .brand img { width:32px; height:32px; }
   nav a, footer a { color:var(--muted); text-decoration:none; margin-left:18px; }
@@ -28,6 +29,7 @@
   ol { color:var(--muted); padding-left:20px; }
   footer { border-top:1px solid rgba(255,255,255,.08); padding-top:20px; padding-bottom:40px; margin-top:24px; color:var(--muted); font-size:14px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
   footer a { margin:0 18px 0 0; }
+  @media (max-width: 560px) { h1 { font-size:32px; } nav a { margin:0 14px 0 0; } .hero { padding:40px 0 28px; } }
 </style>
 </head>
 <body>
